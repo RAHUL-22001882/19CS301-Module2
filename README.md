@@ -1,109 +1,111 @@
 # 19CS301-Module2
-Exp.No:2(a)	ITERATIVE STATEMENTS- PRINTING N NATURAL NUMBERS
+Exp.No:2(a)ITERATIVE STATEMENTS- PRINTING1 TO N EVEN NUMBERS
 ### AIM
-To create a python program for printing n natural numbers.
+To create a python program for printing 1 to n even numbers.
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1: Begin the program.
 
-Step 2:	 Use input() to read the value of n (the upper limit) from the user.
+Step 2: Get the input to an integer
 
-Step 3:	 Convert the input to an integer.
+Step 3: Use a for loop to iterate from 1 to n (inclusive).
 
-Step 4:	 Display the message "Natural Numbers are :".
+Step 4: If number % 2 == 0 (i.e., the number is divisible by 2),Print the number.
 
-Step 5:	 Use a for loop to iterate from 1 to n (inclusive).
+Step 5: In each iteration, print the current value of i.
 
-Step 6:	 In each iteration, print the current value of i.
-
-Step 7:	 Terminate the program.
+Step 6: Terminate the program.
 
 ### PROGRAM
 ```
-n=int(input())
-print("Natural Numbers are :")
-for i in range(1,n+1,1):
-    print(i)
+Even = int(input())
+for number in range(1,Even+1):
+    if(number % 2 == 0):
+        print(number)
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/43ae22f0-fa7f-42b0-b99a-11d87aca3aed)
+![Screenshot 2025-06-02 110524](https://github.com/user-attachments/assets/8d96f7c9-a992-4d6b-8bf3-dbb81405a0af)
+
 
  
 ### RESULT
-Thus the python program for printing n natural numbers has been implemented and executed successfully.
+Thus the python program for printing 1 to n even numbers has been implemented and executed successfully.
 
-Exp.No:2(b)	FUNCTIONS-PERFECT NUMBER
+Exp.No:2(b)	FUNCTIONS-MEAN OF 3 NUMBERS
 
 ### AIM
 To write a Python Program to check if a number is a Perfect number using the concept of functions.
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1: Begin the program.
 
-Step 2:	 Read the number n from the user using input().
+Step 2: Input the first number and store it in variable a.
 
-Step 3:	 Convert the input to an integer.
+Step 3: Input the second number and store it in variable b.
 
-Step 4:	 Define the Function perfectNumber(n) with below steps.
+Step 4: Input the third number and store it in variable c..
 
-Step 5:	 Initialize a variable factor_sum to 0
+Step 5: Calculate the sum: d = a + b + c.
 
-Step 6:	Iterate through all numbers from 1 to n//2 (as divisors of a number can't be greater than half of it).
+Step 6: Calculate the mean: mean = d / 3.
 
-Step 7:	If a number i divides n perfectly (i.e., n % i == 0), add i to factor_sum.
+Step 7: Display the value of mean.
 
-Step 8:	If factor_sum is equal to n, then print the number is a perfect number.Otherwise, print it's not a perfect number.
-
-Step 9:	 Terminate the program.
+Step 8: Terminate the program.
 ### PROGRAM
-```def perfectnumber(n):
-    factor_sum=0
-    for i in range(1,n//2+1):
-        if(n%i==0):
-            factor_sum+=i
-    if(n==factor_sum):
-        print("The number is a Perfect number!")	
-    else:
-        print("The number is not a Perfect number!")
-num=int(input())
-perfectnumber(num)
+```
+def result(a,b,c):
+    d=a+b+c
+    mean=(a+b+c)/3
+    
+    print(f"mean is {mean}")
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+
 ```
 ### OUTPUT
- ![image](https://github.com/user-attachments/assets/cc9562f9-e9f5-4989-82fc-6fcea0ec493f)
+ ![Screenshot 2025-06-02 110706](https://github.com/user-attachments/assets/64acb35f-b228-43d0-816f-8d39ded6c8a0)
+
 
 ### RESULT
-Thus the python program to check if a number is a perfect number or not has been implemented and executed successfully.
+Thus the python program to steps to calculate the mean of three Numbers Start the program has been implemented and executed successfully.
 
-Exp.No:2(c)	BUILT-IN FUNCTIONS AND LAMBDA FUNCTIONS- RELATING TWO NUMBERS
+Exp.No:2(c)BUILT-IN FUNCTIONS AND LAMBDA FUNCTIONS- CALCULATE THE EXPRESSION
 
 ### AIM
-To write a python program to check the relation between them. That is if one number is greater or equal or lesser than another number using the lambda function.
+To write a program in Python to calculate the value of the following expression by using lambda function.
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1: Begin the program.
 
-Step 2:	 Use eval() to get the two numbers (num1 and num2) from the user.
+Step 2: Use eval() to get the three numbers (num1,num2 and num2) from the user.
 
-Step 3:	 Define a lambda function res that takes two arguments x and y
+Step 3: Define a lambda function res that takes three arguments x,y and z.
 
-Step 4:	 The lambda function compares the numbers and prints which one is smaller: If x > y, it prints num2 is smaller than num1. Otherwise, it prints num1 is smaller than num2.
+Step 4: Define an expression: (x / 10) * (y / 2) * z.
 
-Step 5:	 Call the res Function: Pass num1 and num2 to the lambda function to perform the comparison.
+Step 5: Display the result.
 
-Step 6:	 Terminate the program.
+Step 6: Terminate the program.
 ### PROGRAM
-```num1=eval(input())
-num2=eval(input())
-max=lambda x,y: print(f"{num2} is smaller than {num1}") if x>y else print(f"{num1} is smaller than {num2}")![image](https://github.com/user-attachments/assets/4a3ccdb3-e831-41b8-b783-4f58c664521e)
+```
+x=int(input())
+y=int(input())
+z=int(input())
 
-max(num1,num2)
+expr = lambda x, y, z: (x/10) * (y/2) * z
+print(expr(x, y, z))
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/d6767aa8-b158-4f19-83f6-af03322a5b9d)
+
+![Screenshot 2025-06-02 110819](https://github.com/user-attachments/assets/b6e11aeb-36f7-4ca6-9e40-7bc0baafab25)
 
 
 ### RESULT
-Thus the python program to check a relationship between two numbers has been implemented and executed successfully.
+Thus the python program to checking the expression has been implemented and executed successfully.
 
 
 Exp.No:2(d)	LOOPING PATTERNS- PRINTING PATTERN
@@ -112,53 +114,38 @@ Exp.No:2(d)	LOOPING PATTERNS- PRINTING PATTERN
 To write a python program to print the triangular star pattern.
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+step 1:Start the program.
 
-Step 2:	 Read the integer n from the user using input(). This will determine the number of rows in the pattern.
+step 2:Input the number of rows (integer) and store it in variable rows.
 
-Step 3:	 Initialize a variable i = 0. This will be used to control the number of spaces before the stars.
+step 3:Start a loop to iterate from i = 0 to i = rows - 1:
 
-Step 4:	 Loop through rows from 0 to n-1 (this will iterate n times to print the required rows).
+step 4:For each i (representing the current row number):
 
-Step 5:	  For each row, calculate the number of spaces before the stars. 
+step 5:Start a nested loop to iterate from j = 0 to j = i:
 
-Step 6:	 The formula for the number of spaces is ((n - rows - 1) * 2) + i. 
+step 6:Print a star (*) followed by a space on the same line.
 
-Step 7:	 Print the spaces (" ") using the print(" ", end="") statement. 
+step 7:After completing the inner loop for each row, print a newline to move to the next row.
 
-Step 8:	 Increment i by 1 after each row.
+step 8:End the program.
 
-Step 9:	 For each row, print the stars. The number of stars for each row is equal to rows + 1. Print the stars with print("*", end=" ") to separate them with two spaces.
-
-Step 10:	 After printing each row's stars, print a newline to move to the next row using print("").
-
-Step 11:	 Terminate the program.
 ### PROGRAM
-```n=int(input())
-i=0
-for rows in range(0,n):
-    for cols in range(((n-rows-1)*2)+i):
-        print(" ",end="")
-    i+=1
-    for star in range(rows+1):
-        print("*",end="  ")
+```
+rows=int(input())
+for i in range(0, rows):
+    for j in range(0, i+1):
+        print("*", end=' ')
     print("")
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/97a7d6f9-97f1-44e6-a8b1-2c110a717d1c)
+
+![Screenshot 2025-06-02 110949](https://github.com/user-attachments/assets/776f41e9-a037-4932-8f59-63c4046ada93)
 
 
  
 ### RESULT
 Thus the python program to print the triangular start pattern has been implemented and executed successfully.
-
-
-
-
-
-
-
-
 
 
 
@@ -193,7 +180,8 @@ Step 5:	 Print the result using the print() function, displaying the power of th
 
 Step 6:	 Terminate the program.
 ### PROGRAM
-```base=int(input())
+```
+base=int(input())
 exp=int(input())
 res=pow(base,exp)
 print(f"Power of the given number is: {res}")
